@@ -52,7 +52,8 @@ kbd { color: var(--dim); border: 1px solid var(--line); padding: 1px 5px; font: 
 .card-index { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; border: 1px solid var(--line); color: var(--gold); font: 11px Georgia, serif; }
 .event-card[data-type="battle"] .card-index { color: var(--rust); }
 .card-title { display: block; font: 15px/1.2 Georgia, serif; margin: 1px 0 5px; }
-.card-place { display: block; color: var(--muted); font-size: 10px; }
+.card-place { display: block; color: var(--muted); font-size: 10px; line-height: 1.4; }
+.card-summary { display: block; color: #b9beaf; font: 12px/1.4 Georgia, serif; margin-top: 7px; }
 .card-date { color: var(--gold); font-size: 10px; white-space: nowrap; padding-top: 3px; }
 .sidebar-footnote { color: var(--dim); font: italic 11px/1.4 Georgia, serif; margin: 14px 0 0; }
 .map-panel { position: relative; min-width: 0; overflow: hidden; background: #d9d5c4; }
