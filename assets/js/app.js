@@ -31,7 +31,9 @@
     });
     marker.bindPopup(
       '<div class="popup-title">' + escapeHtml(event.title) + '</div>' +
-      '<div class="popup-meta">' + escapeHtml(event.date) + ' · ' + escapeHtml(event.location) + '</div>'
+      '<div class="popup-meta">' + escapeHtml(event.date) + ' · ' + escapeHtml(event.location) + '</div>' +
+      '<p>' + escapeHtml(event.summary) + '</p>' +
+      '<a href="' + escapeHtml(event.sourceUrl) + '" target="_blank" rel="noreferrer">Source: ' + escapeHtml(event.sourceLabel) + ' ↗</a>'
     );
     marker.on("click", () => selectCard(event.id));
     markers.set(event.id, marker);
@@ -59,7 +61,8 @@
       card.innerHTML =
         '<span class="card-index">' + String(index + 1).padStart(2, "0") + '</span>' +
         '<span><span class="card-title">' + escapeHtml(event.title) + '</span>' +
-        '<span class="card-place">' + escapeHtml(event.location) + ' · ' + escapeHtml(event.civilization) + '</span></span>' +
+        '<span class="card-place">' + escapeHtml(event.location) + ' · ' + escapeHtml(event.civilization) + '</span>' +
+        '<span class="card-summary">' + escapeHtml(event.summary) + '</span></span>' +
         '<span class="card-date">' + escapeHtml(event.date) + '</span>';
       card.addEventListener("click", () => focusEvent(event, true));
       list.append(card);
