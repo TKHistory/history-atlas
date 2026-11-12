@@ -167,4 +167,77 @@ window.HISTORY_EVENTS = [
     sourceLabel: "Japan Tourism Agency",
     sourceUrl: "https://www.mlit.go.jp/kankocho/content/001998168.pdf"
   }
-];
+
+  {
+    id: "bursa-1326", title: "Ottoman capture of Bursa", location: "Bursa, Türkiye",
+    date: "1326", year: 1326, type: "place", period: "medieval", coordinates: [40.195, 29.06],
+    civilization: "Ottoman Beylik", summary: "Bursa came under Ottoman rule and became an early center of the growing state.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://kulturportali.gov.tr/portal/kronoloji2"
+  },
+  {
+    id: "edirne-1362", title: "Ottoman capture of Edirne", location: "Edirne, Türkiye",
+    date: "1362 (traditional chronology)", year: 1362, type: "place", period: "medieval", coordinates: [41.677, 26.556],
+    civilization: "Ottoman state", summary: "Edirne became an important Ottoman center for expansion into the Balkans.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://kulturportali.gov.tr/portal/kronoloji2"
+  },
+  {
+    id: "kosovo-1389", title: "Battle of Kosovo", location: "Kosovo field area (approx.)",
+    date: "1389", year: 1389, type: "battle", period: "medieval", coordinates: [42.74, 21.09],
+    civilization: "Ottoman and Serbian-led forces", summary: "Ottoman and Serbian-led forces fought at Kosovo; accounts differ on the battle's immediate outcome and later significance.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://kulturportali.gov.tr/portal/kronoloji2"
+  },
+  {
+    id: "nicopolis-1396", title: "Battle of Nicopolis", location: "Nikopol, Bulgaria (approx.)",
+    date: "1396", year: 1396, type: "battle", period: "medieval", coordinates: [43.704, 24.895],
+    civilization: "Ottoman Empire and European crusading forces", summary: "Bayezid I's Ottoman army defeated a crusading force near the Danube town of Nicopolis.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://www.kulturportali.gov.tr/Common/DownloadFile.aspx?f=4.2.24.2.9OsmanlDevletTekilat_20151214154401982.pdf"
+  },
+  {
+    id: "ankara-1402", title: "Battle of Ankara", location: "Ankara area, Türkiye (approx.)",
+    date: "1402", year: 1402, type: "battle", period: "medieval", coordinates: [39.93, 32.86],
+    civilization: "Timurid and Ottoman forces", summary: "Timur's forces defeated Bayezid I; the Ottoman state entered a succession struggle known as the Interregnum.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://www.kulturportali.gov.tr/Common/DownloadFile.aspx?f=4.2.24.2.9OsmanlDevletTekilat_20151214154401982.pdf"
+  },
+  {
+    id: "varna-1444", title: "Battle of Varna", location: "Varna, Bulgaria (approx.)",
+    date: "1444", year: 1444, type: "battle", period: "medieval", coordinates: [43.214, 27.914],
+    civilization: "Ottoman Empire and crusading forces", summary: "Ottoman forces defeated a European crusading army near Varna on the Black Sea coast.",
+    sourceLabel: "Türkiye Culture Portal · Ottoman chronology", sourceUrl: "https://www.kulturportali.gov.tr/Common/DownloadFile.aspx?f=4.2.24.2.9OsmanlDevletTekilat_20151214154401982.pdf"
+  },
+  {
+    id: "itsukushima-1555", title: "Battle of Itsukushima", location: "Itsukushima, Hiroshima, Japan (approx.)",
+    date: "1555", year: 1555, type: "battle", period: "early-modern", coordinates: [34.296, 132.319],
+    civilization: "Mōri and Sue forces · Sengoku Japan", summary: "Mōri Motonari's forces defeated Sue Harukata's army on Itsukushima.",
+    sourceLabel: "Edo-Tokyo Museum · Sengoku exhibition", sourceUrl: "https://www.edo-tokyo-museum.or.jp/s-exhibition/sengokujidai/"
+  },
+  {
+    id: "kawanakajima-1561", title: "Fourth Battle of Kawanakajima", location: "Hachimanbara, Nagano, Japan (approx.)",
+    date: "1561", year: 1561, type: "battle", period: "early-modern", coordinates: [36.56, 138.19],
+    civilization: "Takeda and Uesugi forces · Sengoku Japan", summary: "Takeda Shingen and Uesugi Kenshin's forces clashed at Kawanakajima; famous details of the battle remain disputed.",
+    sourceLabel: "Sengoku Shogun Map · source and uncertainty notes", sourceUrl: "https://samurai.ufirst.jp/sengoku-map/en/battle/kawanakajima-4"
+  },
+  {
+    id: "anegawa-1570", title: "Battle of Anegawa", location: "Ane River, Shiga, Japan (approx.)",
+    date: "1570", year: 1570, type: "battle", period: "early-modern", coordinates: [35.43, 136.28],
+    civilization: "Oda, Tokugawa, Azai, and Asakura forces · Sengoku Japan", summary: "Forces aligned with Oda Nobunaga and Tokugawa Ieyasu fought Azai and Asakura forces near the Ane River.",
+    sourceLabel: "Edo-Tokyo Museum · Sengoku exhibition", sourceUrl: "https://www.edo-tokyo-museum.or.jp/s-exhibition/sengokujidai/"
+  },
+  {
+    id: "honnoji-1582", title: "Honnō-ji Incident", location: "Kyoto, Japan",
+    date: "1582", year: 1582, type: "battle", period: "early-modern", coordinates: [35.006, 135.768],
+    civilization: "Oda and Akechi forces · Sengoku Japan", summary: "Akechi Mitsuhide's forces attacked Oda Nobunaga at Honnō-ji in Kyoto; Nobunaga died during the incident.",
+    sourceLabel: "National Archives of Japan", sourceUrl: "https://www.archives.go.jp/exhibition/digital/ieyasu/contents1_07/"
+  },
+  {
+    id: "komaki-nagakute-1584", title: "Komaki and Nagakute Campaign", location: "Aichi, Japan (campaign area approx.)",
+    date: "1584", year: 1584, type: "battle", period: "early-modern", coordinates: [35.18, 136.96],
+    civilization: "Tokugawa and Oda Nobukatsu vs. Hashiba Hideyoshi · Japan", summary: "A campaign of battles and standoffs followed the rivalry between Tokugawa Ieyasu and Hashiba Hideyoshi.",
+    sourceLabel: "Nagoya City Museum", sourceUrl: "https://www.museum.city.nagoya.jp/exhibition/owari_joyubi_news/komaki_nagakute/"
+  },
+  {
+    id: "bursa-early-ottoman", title: "Bursa, early Ottoman capital", location: "Bursa, Türkiye",
+    date: "14th century", year: 1326, type: "place", period: "medieval", coordinates: [40.195, 29.06],
+    civilization: "Ottoman state", summary: "Bursa's role as an early Ottoman capital reflects the state's transition from a frontier principality to a regional power.",
+    sourceLabel: "Türkiye Culture Portal · Bursa", sourceUrl: "https://www.kulturportali.gov.tr/turkiye/bursa/genelbilgiler"
+  },
+];\n
