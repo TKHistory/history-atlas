@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111714">
+  <meta name="description" content="Explore historical places and events with History Atlas.">
+  <title>History Atlas — explore the past</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="History Atlas home">
+      <span class="wordmark-icon" aria-hidden="true">H</span>
+      <span>HISTORY<span class="wordmark-light">ATLAS</span></span>
+    </a>
+    <div class="topbar-note"><span class="status-dot"></span> A living map of the past</div>
+    <a class="topbar-link" href="https://github.com/TKHistory/history-atlas" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">History, in its place</p>
+      <h1 id="page-title">The past is <em>everywhere.</em></h1>
+      <p class="intro-copy">Trace the moments, cities, and turning points that shaped our world.</p>
+    </section>
+
+    <section class="explorer" aria-label="Historical atlas">
+      <aside class="sidebar">
+        <div class="sidebar-heading">
+          <div>
+            <p class="eyebrow">Field notes</p>
+            <h2>Explore the atlas</h2>
+          </div>
+          <span class="count-pill" id="result-count" aria-live="polite">0 entries</span>
+        </div>
+
+        <label class="search-box">
+          <span class="visually-hidden">Search historical entries</span>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Search places, people, events…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+
+        <div class="filters">
+          <label class="filter-label" for="type-filter">Show me</label>
+          <select id="type-filter">
+            <option value="all">All entries</option>
+            <option value="place">Places</option>
+            <option value="battle">Battles</option>
+          </select>
+          <label class="filter-label" for="period-filter">Time period</label>
+          <select id="period-filter">
+            <option value="all">Any period</option>
+            <option value="ancient">Ancient · before 500 CE</option>
+            <option value="medieval">Medieval · 500–1499</option>
+            <option value="early-modern">Early modern · 1500–1800</option>
+          </select>
+        </div>
+
+        <div class="results-label"><span>Selected stories</span><span class="results-rule"></span></div>
+        <div id="event-list" class="event-list" aria-live="polite"></div>
+        <p class="sidebar-footnote">A small first collection. More stories will be added over time.</p>
+      </aside>
+
+      <div class="map-panel">
+        <div class="map-caption"><span class="map-caption-mark" aria-hidden="true">✳</span><span>WORLD / <span id="map-caption-count">06</span> STORIES</span></div>
+        <div id="map" role="application" aria-label="Map of historical places and events"></div>
+        <div class="map-legend" aria-label="Map legend">
+          <span><i class="legend-dot place-dot"></i>Place</span>
+          <span><i class="legend-dot battle-dot"></i>Battle</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>HISTORY ATLAS <span class="footer-divider">/</span> AN OPEN LEARNING PROJECT</span>
+    <span>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a></span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/data/events.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
