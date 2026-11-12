@@ -1,6 +1,6 @@
 (() => {
   const events = window.HISTORY_EVENTS || [];
-  const colors = { place: "#c79b59", battle: "#c86f53" };
+  const colors = { place: "#cf5968", battle: "#d07858" };
   const map = L.map("map", { zoomControl: false, scrollWheelZoom: true }).setView([28, 29], 2.15);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -27,7 +27,8 @@
       color: "#f4edda",
       weight: 1.5,
       fillColor: colors[event.type] || colors.place,
-      fillOpacity: .95
+      fillOpacity: .95,
+      className: "atlas-marker"
     });
     marker.bindPopup(
       '<div class="popup-title">' + escapeHtml(event.title) + '</div>' +
@@ -56,6 +57,7 @@
       card.className = "event-card";
       card.dataset.type = event.type;
       card.dataset.id = event.id;
+      card.style.setProperty("--card-index", index);
       card.setAttribute("aria-current", String(event.id === selectedId));
       card.setAttribute("aria-label", event.title + ", " + event.date + ", " + event.location);
       card.innerHTML =
@@ -89,6 +91,8 @@
     list.querySelectorAll(".event-card").forEach((card) => {
       card.setAttribute("aria-current", String(card.dataset.id === id));
     });
+    markers.forEach((marker) => marker.getElement()?.classList.remove("is-selected"));
+    markers.get(id)?.getElement()?.classList.add("is-selected");
   }
 
   function focusEvent(event, openPopup) {
