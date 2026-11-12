@@ -166,8 +166,7 @@ window.HISTORY_EVENTS = [
     summary: "Two campaigns around Osaka Castle formed the final military clash between the Tokugawa and Toyotomi families.",
     sourceLabel: "Japan Tourism Agency",
     sourceUrl: "https://www.mlit.go.jp/kankocho/content/001998168.pdf"
-  }
-
+  },
   {
     id: "bursa-1326", title: "Ottoman capture of Bursa", location: "Bursa, Türkiye",
     date: "1326", year: 1326, type: "place", period: "medieval", coordinates: [40.195, 29.06],
