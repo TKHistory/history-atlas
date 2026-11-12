@@ -235,9 +235,9 @@ window.HISTORY_EVENTS = [
     sourceLabel: "Nagoya City Museum", sourceUrl: "https://www.museum.city.nagoya.jp/exhibition/owari_joyubi_news/komaki_nagakute/"
   },
   {
-    id: "bursa-early-ottoman", title: "Bursa, early Ottoman capital", location: "Bursa, Türkiye",
-    date: "14th century", year: 1326, type: "place", period: "medieval", coordinates: [40.195, 29.06],
-    civilization: "Ottoman state", summary: "Bursa's role as an early Ottoman capital reflects the state's transition from a frontier principality to a regional power.",
-    sourceLabel: "Türkiye Culture Portal · Bursa", sourceUrl: "https://www.kulturportali.gov.tr/turkiye/bursa/genelbilgiler"
+    id: "iga-goe-1582", title: "Ieyasu’s Iga-goe return", location: "Sakai to Okazaki, Japan (route approx.)",
+    date: "1582", year: 1582, type: "place", period: "early-modern", coordinates: [34.72, 136.13],
+    civilization: "Tokugawa house · Sengoku Japan", summary: "After learning of Nobunaga’s death at Honnō-ji, Tokugawa Ieyasu returned to Okazaki by a route through Iga.",
+    sourceLabel: "National Archives of Japan", sourceUrl: "https://www.archives.go.jp/exhibition/digital/ieyasu/contents1_07/"
   },
-];\n
+];
