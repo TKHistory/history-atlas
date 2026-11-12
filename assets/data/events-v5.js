@@ -239,7 +239,6 @@ window.HISTORY_EVENTS = [
     civilization: "Tokugawa house · Sengoku Japan", summary: "After learning of Nobunaga’s death at Honnō-ji, Tokugawa Ieyasu returned to Okazaki by a route through Iga.",
     sourceLabel: "National Archives of Japan", sourceUrl: "https://www.archives.go.jp/exhibition/digital/ieyasu/contents1_07/"
   },
-,
 
   {
     id: "gobekli-tepe", title: "Göbekli Tepe", location: "Şanlıurfa, Türkiye",
